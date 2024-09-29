@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.bg-img {
+    background-image: url("home-bg.png");
+    /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.blur-background {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.api-endpoints {
+    margin-top: 20px;
+}
+
+.api-endpoints ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.api-endpoints li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.api-endpoints a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+@keyframes aLinkHover {
+    from { font-size: 1rem; }
+    to { font-size: 2rem; }
+}
+
+.api-endpoints a:hover {
+    color: #23527c;
+    animation: aLinkHover 1s 1 alternate both;
+}

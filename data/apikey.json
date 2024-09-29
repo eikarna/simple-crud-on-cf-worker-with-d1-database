@@ -1,0 +1,11 @@
+{
+    "apikey_list": [
+    {
+        "key": "user1",
+        "table": "user1_db"
+    }, {
+        "key": "user2",
+        "table": "user2_db"
+    }
+    ]
+}
